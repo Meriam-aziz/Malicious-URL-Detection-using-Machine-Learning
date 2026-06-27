@@ -2,30 +2,30 @@
 
 ## 📌 Overview
 
-This project presents a Machine Learning solution for detecting and classifying malicious URLs. It uses feature engineering techniques to extract meaningful characteristics from URLs and trains classification models to distinguish between malicious and legitimate websites.
+This project presents a Machine Learning solution for detecting malicious URLs using feature engineering and classification algorithms. The system analyzes URL characteristics, extracts meaningful features, and classifies URLs as either malicious or legitimate.
 
 ---
 
 ## 🎯 Objective
 
-The objective of this project is to build an accurate machine learning model capable of identifying malicious URLs and improving web security.
+The main objective of this project is to build an accurate machine learning model capable of detecting malicious URLs and improving cybersecurity by identifying potentially harmful websites.
 
 ---
 
 ## 📊 Dataset
 
-The project uses a dataset containing URLs labeled by their type (benign or malicious).
+The dataset contains URLs labeled as **Benign** or **Malicious**.
 
-The dataset includes various URL patterns that are transformed into numerical features before model training.
+After preprocessing, several features were extracted from each URL to improve the performance of the machine learning models.
 
 ---
 
 ## ⚙️ Workflow
 
 1. Load the dataset.
-2. Data cleaning and duplicate removal.
-3. Feature engineering from URLs.
-4. Data preprocessing and scaling.
+2. Data preprocessing and cleaning.
+3. Feature extraction from URLs.
+4. Exploratory Data Analysis (EDA).
 5. Train Machine Learning models.
 6. Evaluate model performance.
 7. Compare classification results.
@@ -55,23 +55,23 @@ The dataset includes various URL patterns that are transformed into numerical fe
 
 ---
 
+### Distribution of Malicious URLs by Region
+
+![Malicious URLs by Region](images/malicious_urls_by_region.png)
+
+---
+
 ### Random Forest Confusion Matrix
 
-![Random Forest](images/random_forest_cm.png)
+![Random Forest Confusion Matrix](images/random_forest_cm.png)
 
 ---
 
 ### Gradient Boosting Confusion Matrix
 
-![Gradient Boosting](images/gradient_boosting_cm.png)
+![Gradient Boosting Confusion Matrix](images/gradient_boosting_cm.png)
 
----
-
-### Model Performance
-
-![Performance](images/model_performance.png)
-
-The models achieved strong performance in distinguishing malicious URLs from legitimate ones.
+The trained models successfully classified malicious and legitimate URLs with high accuracy, demonstrating the effectiveness of machine learning techniques for cybersecurity applications.
 
 ---
 
@@ -80,11 +80,9 @@ The models achieved strong performance in distinguishing malicious URLs from leg
 - Python
 - Pandas
 - NumPy
-- Scikit-learn
 - Matplotlib
-- Seaborn
 - Plotly
-- tldextract
+- Scikit-learn
 
 ---
 
@@ -109,9 +107,9 @@ Malicious-URL-Detection-using-Machine-Learning/
 │
 ├── images/
 │   ├── dataset_distribution.png
+│   ├── malicious_urls_by_region.png
 │   ├── random_forest_cm.png
-│   ├── gradient_boosting_cm.png
-│   └── model_performance.png
+│   └── gradient_boosting_cm.png
 │
 ├── Malicious URLs.ipynb
 ├── README.md
@@ -122,11 +120,11 @@ Malicious-URL-Detection-using-Machine-Learning/
 
 ## 🚀 Features
 
-- URL feature engineering
-- Data preprocessing
-- Machine learning classification
-- Performance evaluation
-- Comparison between Random Forest and Gradient Boosting
+- URL preprocessing and feature extraction.
+- Exploratory Data Analysis (EDA).
+- Machine Learning classification.
+- Performance evaluation using confusion matrices.
+- Comparison between Random Forest and Gradient Boosting models.
 
 ---
 
@@ -138,7 +136,7 @@ Malicious-URL-Detection-using-Machine-Learning/
 
 ## ⭐ Future Improvements
 
-- Deploy the model as a web application.
+- Deploy the model as a web application using Streamlit or Flask.
 - Add real-time URL prediction.
-- Improve feature extraction techniques.
-- Experiment with Deep Learning models.
+- Integrate additional URL-based security features.
+- Explore Deep Learning approaches for malicious URL detection.
