@@ -1,80 +1,107 @@
 # 🔒 Malicious URL Detection using Machine Learning
 
-## 📌 Overview
-
-This project presents a Machine Learning approach for detecting malicious URLs using feature engineering and classification algorithms. The system analyzes URL characteristics and classifies URLs as either **Benign** or **Malicious**, helping improve cybersecurity and online safety.
+A Machine Learning project that detects malicious URLs using feature engineering and supervised learning algorithms to improve cybersecurity and online safety.
 
 ---
 
-## 🎯 Objective
+## 📌 Overview
 
-The main objective of this project is to build an accurate machine learning model capable of detecting malicious URLs based on extracted URL features.
+Malicious URLs are one of the most common attack vectors used in phishing, malware distribution, and online fraud. This project applies Machine Learning techniques to automatically classify URLs as malicious or legitimate based on extracted URL features.
+
+The project covers the complete Machine Learning pipeline, including data preprocessing, feature engineering, exploratory data analysis (EDA), model training, evaluation, and performance comparison.
+
+---
+
+## 🚀 Features
+
+- URL preprocessing and cleaning
+- Feature Engineering
+- Exploratory Data Analysis (EDA)
+- Machine Learning classification
+- Model comparison
+- Performance evaluation
+- Confusion Matrix visualization
+- Cybersecurity-focused prediction system
 
 ---
 
 ## 📊 Dataset
 
-The dataset contains URLs labeled as:
+The dataset contains labeled URLs that were processed and transformed into meaningful numerical features before training.
 
-- Benign
-- Malicious
+### Data Processing
 
-After preprocessing, useful features were extracted from each URL to improve the performance of the machine learning models.
-
----
-
-## ⚙️ Workflow
-
-1. Load the dataset.
-2. Data preprocessing and cleaning.
-3. Feature engineering.
-4. Exploratory Data Analysis (EDA).
-5. Train Machine Learning models.
-6. Evaluate model performance.
-7. Compare model results.
+- Data Cleaning
+- Feature Extraction
+- Feature Engineering
+- Exploratory Data Analysis (EDA)
+- Train/Test Split
 
 ---
 
-## 🤖 Models Used
+## 🤖 Machine Learning Models
 
-- Random Forest Classifier
-- Gradient Boosting Classifier
+The following models were implemented and evaluated:
 
----
-
-## 📈 Evaluation Metrics
-
-- Accuracy
-- Confusion Matrix
-- Classification Report
+- 🌲 Random Forest Classifier
+- 📈 Gradient Boosting Classifier
 
 ---
 
-## 🖼️ Results
+## 📈 Model Performance
+
+| Model | Accuracy |
+|--------|----------|
+| Random Forest | **97%** |
+| Gradient Boosting | **95%** |
+
+Random Forest achieved the highest accuracy and demonstrated the best overall performance for malicious URL classification.
+
+---
+
+## 📷 Results
 
 ### Dataset Distribution
 
-![Dataset Distribution](images/dataset_distribution.png.png)
+<p align="center">
+  <img src="images/dataset_distribution.png.png" width="700">
+</p>
 
 ---
 
 ### Distribution of Malicious URLs by Region
 
-![Malicious URLs by Region](images/malicious_urls_by_region.png.png)
+<p align="center">
+  <img src="images/malicious_urls_by_region.png.png" width="700">
+</p>
 
 ---
 
 ### Random Forest Confusion Matrix
 
-![Random Forest](images/random_forest.png.png)
+<p align="center">
+  <img src="images/random_forest.png.png" width="550">
+</p>
 
 ---
 
 ### Gradient Boosting Confusion Matrix
 
-![Gradient Boosting](images/gradient_boosting.png.png)
+<p align="center">
+  <img src="images/gradient_boosting.png.png" width="550">
+</p>
 
-The trained machine learning models successfully classified malicious and legitimate URLs, demonstrating the effectiveness of machine learning techniques for cybersecurity applications.
+---
+
+## 📊 Evaluation Metrics
+
+The models were evaluated using:
+
+- Accuracy
+- Classification Report
+- Confusion Matrix
+
+Random Forest achieved the best classification performance among the evaluated models.
 
 ---
 
@@ -83,27 +110,14 @@ The trained machine learning models successfully classified malicious and legiti
 - Python
 - Pandas
 - NumPy
+- Scikit-learn
 - Matplotlib
 - Plotly
-- Scikit-learn
+- Jupyter Notebook
 
 ---
 
-## ▶️ How to Run
-
-```bash
-git clone https://github.com/Meriam-aziz/Malicious-URL-Detection-using-Machine-Learning.git
-
-cd Malicious-URL-Detection-using-Machine-Learning
-
-pip install -r requirements.txt
-
-jupyter notebook "Malicious URLs.ipynb"
-```
-
----
-
-## 📁 Project Structure
+## 📂 Project Structure
 
 ```text
 Malicious-URL-Detection-using-Machine-Learning/
@@ -121,13 +135,33 @@ Malicious-URL-Detection-using-Machine-Learning/
 
 ---
 
-## 🚀 Features
+## ⚙️ Installation
 
-- URL preprocessing and feature engineering.
-- Exploratory Data Analysis (EDA).
-- Machine Learning classification using multiple models.
-- Performance evaluation using confusion matrices.
-- Comparison between Random Forest and Gradient Boosting classifiers.
+```bash
+git clone https://github.com/Meriam-aziz/Malicious-URL-Detection-using-Machine-Learning.git
+
+cd Malicious-URL-Detection-using-Machine-Learning
+
+pip install -r requirements.txt
+```
+
+---
+
+## ▶️ Run the Project
+
+```bash
+jupyter notebook "Malicious URLs.ipynb"
+```
+
+---
+
+## 💡 Future Improvements
+
+- Deploy the model using Streamlit or Flask
+- Support real-time URL prediction
+- Improve feature engineering techniques
+- Explore Deep Learning approaches
+- Build a REST API for deployment
 
 ---
 
@@ -135,11 +169,9 @@ Malicious-URL-Detection-using-Machine-Learning/
 
 **Meriam Aziz**
 
----
+Artificial Intelligence Engineer
 
-## ⭐ Future Improvements
-
-- Deploy the model as a web application using Streamlit or Flask.
+If you found this project useful, don't forget to ⭐ the repository.
 - Add real-time URL prediction.
 - Improve feature extraction techniques.
 - Explore Deep Learning approaches for malicious URL detection.
